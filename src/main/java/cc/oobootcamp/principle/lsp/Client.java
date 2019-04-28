@@ -11,5 +11,15 @@ public class Client {
         quads.setWidth(5);
 
         LOGGER.info(String.valueOf(quads.calculateArea()));
+
+        Square square = new Square();
+        square.setSide(4);
+        LOGGER.info(String.valueOf(square.calculateArea()));
+
+
+        quads = square;
+        quads.setHeight(3);
+        quads.setWidth(5);
+        LOGGER.info(String.valueOf(quads.calculateArea()));
     }
 }
